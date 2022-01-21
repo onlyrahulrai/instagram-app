@@ -13,7 +13,7 @@ const Modal = () => {
     const [open,setOpen] = useRecoilState(modalState)
     const filePickerRef = useRef(null)
     const captionRef = useRef(null)
-    const [selectedFile,setSelectedFile] = useState(null)
+    const [selectedFile,setSelectedFile] = useState("")
     const [loading,setLoading] = useState(false)
 
     const uploadPost = async () => {
