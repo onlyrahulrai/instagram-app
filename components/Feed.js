@@ -1,6 +1,9 @@
 import { useSession } from 'next-auth/react';
 import React from 'react';
-import { Stories,Posts,MiniProfile,Suggestions } from '.';
+import  Stories from "./Stories"
+import Posts from "./Posts"
+import MiniProfile from "./MiniProfile"
+import Suggestions from './Suggestions';
 
 const Feed = () => {
   const {data:session} = useSession()

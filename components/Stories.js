@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as faker from '@faker-js/faker';
-import { Story } from '.';
+import Story  from './Story';
 import {useSession} from "next-auth/react"
 
 
