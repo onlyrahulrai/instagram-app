@@ -3,7 +3,7 @@ import { getProviders, signIn as SignIntoProvider } from "next-auth/react";
 import Header from "../../components/Header";
 
 // Browser...
-const signIn = ({ providers }) => {
+const signin = ({ providers }) => {
   return (
       <>
       <Header />
@@ -40,4 +40,4 @@ export async function getServerSideProps() {
   };
 }
 
-export default signIn;
+export default signin;
