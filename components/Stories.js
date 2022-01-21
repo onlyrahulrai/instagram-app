@@ -29,7 +29,7 @@ const Stories = () => {
                 )
             }
             {
-                suggestions.map((profile,i) => (
+                suggestions?.map((profile,i) => (
                     <Story key={i} username={profile.username} avatar={profile.avatar} />
                 ))
             }

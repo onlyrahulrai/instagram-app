@@ -23,7 +23,7 @@ const Suggestions = () => {
           </div>
 
           {
-              suggestions.map((profile,index) => (
+              suggestions?.map((profile,index) => (
                 <div key={index} className='flex items-center justify-between mt-3'>
                     <img className='w-10 h-10 rounded-full border p-[2px]' src={profile.avatar} />
 
