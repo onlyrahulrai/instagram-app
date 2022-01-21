@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
 import {
-  SearchIcon,
-  PlusCircleIcon,
-  UserGroupIcon,
   DotsHorizontalIcon,
   HeartIcon,
   PaperAirplaneIcon,
-  MenuIcon,
   ChatIcon,
   BookmarkIcon,
   EmojiHappyIcon,
@@ -55,10 +51,10 @@ const Post = (props) => {
 
   const likePost = async () => {
     if(hasLiked){
-      await deleteDoc(doc(db , "posts",id,"likes",session.user.uid))
+      await deleteDoc(doc(db , "posts",id,"likes",session?.user?.uid))
     }else{
-      await setDoc(doc(db,"posts",id,"likes",session.user.uid),{
-        username:session.user.username
+      await setDoc(doc(db,"posts",id,"likes",session?.user?.uid),{
+        username:session?.user?.username
       })
     }
   }
@@ -74,13 +70,11 @@ const Post = (props) => {
 
     await addDoc(collection(db, "posts", id, "comments"), {
       comment: commentToSend,
-      username: session.user.username,
-      userImage: session.user.image,
+      username: session?.user?.username,
+      userImage: session?.user?.image,
       timestamp: serverTimestamp(),
     });
   };
-
-  console.log(session)
   
 
   return (

@@ -26,7 +26,6 @@ const Posts = () => {
   const [posts, setPosts] = useState([]);
   const session = useSession()
 
-  console.log(session)
 
   useEffect(
     () =>

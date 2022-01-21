@@ -3,7 +3,6 @@ import React from 'react';
 const Story = (props) => {
     const {avatar,username} = props;
 
-    console.log(props)
 
   return (
       <div>

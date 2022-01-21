@@ -9,7 +9,6 @@ import {
     MenuIcon
 } from "@heroicons/react/outline"
 import {HomeIcon} from "@heroicons/react/solid"
-import profile from "../public/profile.jpg"
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { useRecoilState } from 'recoil';
@@ -21,7 +20,6 @@ const Header = () => {
   const [open,setOpen] = useRecoilState(modalState)
   const router = useRouter()
 
-  console.log(" ---- session ---- ",session)
 
   return (
       <div className='shadow-sm border-b bg-white sticky top-0 z-50'>
