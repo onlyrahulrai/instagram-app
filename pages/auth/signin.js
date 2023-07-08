@@ -1,6 +1,7 @@
 import React from "react";
 import { getProviders, signIn as SignIntoProvider } from "next-auth/react";
 import Header from "../../components/Header";
+import Image from "next/image";
 
 // Browser...
 const signin = ({ providers }) => {
@@ -9,7 +10,7 @@ const signin = ({ providers }) => {
       <Header />
     <div className="flex flex-col items-center justify-center min-h-screen -mt-24 text-center">
 
-        <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
+        <Image src="https://links.papareact.com/ocw" alt="" width={512} height={308} />
 
         <p className="font-xs italic">
             This is not a REAL app, it is built for educational purposes only

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSession,signOut } from 'next-auth/react';
 import profileImg from "../public/profile.jpg"
+import Image from 'next/image';
 
 
 const MiniProfile = () => {
@@ -10,10 +11,12 @@ const MiniProfile = () => {
 
   return (
       <div className='flex items-center justify-between mt-14 ml-10'>
-          <img 
+          <Image
             src={session?.user?.image ?? profileImg.src}
             alt="profile pic"
-            className='w-16 h-16 rounded-full border p-[2px]'
+            className='rounded-full border p-[2px]'
+            width={64}
+            height={64}
           />
 
           <div className='flex-1 mx-4'>
