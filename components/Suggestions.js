@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import { faker } from "@faker-js/faker";
 import Image from "next/image";
 

@@ -1,7 +1,7 @@
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import  Post  from "./Post";
 import { db } from "../firebase";
 
